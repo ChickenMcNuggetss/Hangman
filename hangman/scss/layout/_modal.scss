@@ -1,0 +1,18 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.modal {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    padding: 15px;
+
+    background-color: variables.$light-color;
+    border: 10px dashed variables.$dark-color;
+
+    @include mixins.font;
+}

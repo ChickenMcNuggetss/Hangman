@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+body {
+  background-color: variables.$background-color;
+  margin: 0 auto;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.title {
+  font-size: 60px;
+  margin: 40px auto;
+}

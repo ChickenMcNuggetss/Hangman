@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.wrapper-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #20449973;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

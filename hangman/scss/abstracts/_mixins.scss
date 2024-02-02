@@ -1,0 +1,7 @@
+@use "./variables";
+
+@mixin font {
+  font-family: variables.$font;
+  color: variables.$dark-color;
+  font-size: 30px;
+}

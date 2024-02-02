@@ -1,0 +1,56 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: variables.$middle-color;
+  border-radius: 8px;
+  @include mixins.font;
+  color: variables.$light-color;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: variables.$lighter-middle-color;
+      color: variables.$dark-color;
+      transition: 0.5s;
+    }
+  }
+
+  &_disabled {
+    background-color: variables.$lighter-middle-color;
+    color: variables.$dark-color;
+    cursor: default;
+    transition: 0.5s;
+  }
+}
+
+.play-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @include mixins.font;
+
+  border: none;
+  background-color: variables.$middle-color;
+  color: variables.$light-color;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: variables.$lighter-middle-color;
+      color: variables.$dark-color;
+      transition: 0.5s;
+    }
+  }
+}

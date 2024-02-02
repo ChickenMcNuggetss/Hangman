@@ -1,0 +1,17 @@
+.interactive-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  gap: 30px;
+
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
